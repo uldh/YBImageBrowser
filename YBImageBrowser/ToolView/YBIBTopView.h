@@ -12,7 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, YBIBTopViewOperationType) {
     YBIBTopViewOperationTypeSave,   //保存
-    YBIBTopViewOperationTypeMore    //更多
+    YBIBTopViewOperationTypeMore,    //更多
+    YBIBTopViewOperationTypeClose    // 关闭
 };
 
 @interface YBIBTopView : UIView

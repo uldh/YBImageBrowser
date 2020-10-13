@@ -115,7 +115,9 @@ NSBundle *YBIBVideoBundle(void) {
         _toolMoreImage = ^UIImage * _Nullable{
             return [UIImage ybib_imageNamed:@"ybib_more" bundle:YBIBDefaultBundle()];
         };
-        
+        _toolCloseImage = ^UIImage * _Nullable{
+            return [UIImage ybib_imageNamed:@"btn_nb_general_close_normal" bundle:YBIBDefaultBundle()];
+        };
         _videoPlayImage = ^UIImage * _Nullable{
             return [UIImage ybib_imageNamed:@"ybib_play" bundle:YBIBVideoBundle()];
         };

@@ -37,7 +37,7 @@
     self.pageLabel.frame = CGRectMake(0, 0, width / 3, height);
     self.pageLabel.center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
     CGFloat buttonWidth = 54;
-    self.operationButton.frame = CGRectMake(width - buttonWidth, 0, buttonWidth, height);
+    self.operationButton.frame = CGRectMake(12, 0, buttonWidth, height);
 }
 
 #pragma mark - public
@@ -80,6 +80,9 @@
             break;
         case YBIBTopViewOperationTypeMore:
             image = [YBIBIconManager sharedManager].toolMoreImage();
+            break;
+        case YBIBTopViewOperationTypeClose:
+            image = [YBIBIconManager sharedManager].toolCloseImage();
             break;
     }
     

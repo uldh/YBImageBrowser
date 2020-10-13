@@ -133,8 +133,13 @@
                     [self showSheetView];
                 }
                     break;
+                case YBIBTopViewOperationTypeClose: {
+                    NSLog(@"YBIBTopViewOperationTypeClose");
+                }
+                    break;
                 default:
                     break;
+                
             }
         }];
     }
