@@ -50,7 +50,7 @@
     } else {
         self.pageLabel.hidden  = NO;
         
-        NSString *text = [NSString stringWithFormat:@"%ld/%ld", page + (NSInteger)1, totalPage];
+        NSString *text = [NSString stringWithFormat:@"%ld///%ld", page + (NSInteger)1, totalPage];
         NSShadow *shadow = [NSShadow new];
         shadow.shadowBlurRadius = 4;
         shadow.shadowOffset = CGSizeMake(0, 1);
