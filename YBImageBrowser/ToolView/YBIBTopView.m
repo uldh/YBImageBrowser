@@ -94,7 +94,7 @@
         _pageLabel = [UILabel new];
         _pageLabel.textColor = [UIColor whiteColor];
         _pageLabel.font = [UIFont boldSystemFontOfSize:16];
-        _pageLabel.textAlignment = NSTextAlignmentLeft;
+        _pageLabel.textAlignment = NSTextAlignmentCenter;
         _pageLabel.adjustsFontSizeToFitWidth = YES;
     }
     return _pageLabel;
@@ -111,6 +111,8 @@
         _operationButton.layer.shadowOffset = CGSizeMake(0, 1);
         _operationButton.layer.shadowOpacity = 1;
         _operationButton.layer.shadowRadius = 4;
+        
+        _operationButton.enabled = NO;
     }
     return _operationButton;
 }
