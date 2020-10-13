@@ -33,7 +33,9 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     CGFloat height = self.bounds.size.height, width = self.bounds.size.width;
-    self.pageLabel.frame = CGRectMake(16, 0, width / 3, height);
+//    self.pageLabel.frame = CGRectMake(16, 0, width / 3, height);
+    self.pageLabel.frame = CGRectMake(0, 0, width / 3, height);
+    self.pageLabel.center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
     CGFloat buttonWidth = 54;
     self.operationButton.frame = CGRectMake(width - buttonWidth, 0, buttonWidth, height);
 }
@@ -50,7 +52,7 @@
     } else {
         self.pageLabel.hidden  = NO;
         
-        NSString *text = [NSString stringWithFormat:@"%ld///%ld", page + (NSInteger)1, totalPage];
+        NSString *text = [NSString stringWithFormat:@"%ld/%ld", page + (NSInteger)1, totalPage];
         NSShadow *shadow = [NSShadow new];
         shadow.shadowBlurRadius = 4;
         shadow.shadowOffset = CGSizeMake(0, 1);
