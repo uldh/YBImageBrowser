@@ -112,7 +112,6 @@
         _operationButton.layer.shadowOpacity = 1;
         _operationButton.layer.shadowRadius = 4;
         
-        _operationButton.enabled = NO;
     }
     return _operationButton;
 }
