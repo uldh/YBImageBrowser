@@ -47,7 +47,7 @@
 }
 
 - (void)setPage:(NSInteger)page totalPage:(NSInteger)totalPage {
-    if (totalPage <= 1) {
+    if (totalPage < 1) {
         self.pageLabel.hidden = YES;
     } else {
         self.pageLabel.hidden  = NO;
